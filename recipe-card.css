@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,900");
+
+body {
+    font-family: Lato, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(images/food-image-bg.png);
+}
+
+
+main {
+    height: 533px;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 80px auto;
+    grid-template-areas:
+        "info title"
+        "button steps";
+    color: #ffff;
+}
+
+h1 {
+    font-size: 46px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.recipies-info {
+    grid-area: info;
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.recipies-info p span {
+    color: #b8d632;
+}
+
+.btn-primary {
+    justify-self: end;
+    align-self: start;
+    background-color: #b8d632;
+    color: #ffff;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 22px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #94ad1e;
+}
+
+.prep-steps {
+    list-style: none;
+    padding-left: 10px;
+}
+
+.step {
+    font-size: 16px;
+    margin-bottom: 22px;
+    color: #ffff;
+}
+
+
+
